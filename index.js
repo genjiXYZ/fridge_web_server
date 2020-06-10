@@ -14,6 +14,10 @@ app.use (express.json())
 
 app.use(cors())
 app.use('/avatars',express.static(__dirname+'/avatars'))
+app.use('/admin',express.static(__dirname+'/admin'))
+app.use('/web',express.static(__dirname+'/web'))
+
+
 
 // //数据库
 require('./db/db')(app)
